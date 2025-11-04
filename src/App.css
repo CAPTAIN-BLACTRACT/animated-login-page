@@ -1,0 +1,206 @@
+.app-container {
+display: flex;
+height: 100vh;
+width: 100vw;
+}
+
+.split-screen-child {
+flex: 1;
+justify-content : center;
+align-items : center;
+background-color:#f7f7f7;
+}
+
+@keyframes slideUpFadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+/* This is the outer container in the right pane, used for centering */
+.login-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* A light grey background for the pane */
+}
+
+/* This is the main white form card */
+.login-form-container {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  /* Animation styles */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* This class triggers the animation */
+.login-form-container.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Typography --- */
+.login-form-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #18181b;
+}
+
+.form-subheading {
+  color: #71717a;
+  margin-bottom: 2rem;
+}
+
+/* --- Input Fields --- */
+.input-group {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #3f3f46;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d4d4d8;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Important for padding and width */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #18181b;
+  box-shadow: 0 0 0 3px rgba(24, 24, 27, 0.1);
+}
+
+/* --- Options Row --- */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-group label {
+  margin: 0;
+  color: #52525b;
+}
+
+a.forgot-password {
+  color: #18181b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* --- Buttons --- */
+.login-button {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  background-color: #18181b;
+  color: #ffffff;
+  border-radius: 50px; /* This creates the pill shape */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  background-color: #3f3f46;
+}
+
+/* --- Footer --- */
+.form-footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #52525b;
+}
+
+.form-footer a {
+  color: #18181b;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Character Head */
+.character-head {
+  position: relative; /* Allows us to position it precisely */
+  top: 40%; 
+  left: 50%;
+  transform: translateX(-50%); /* Centers the head */
+  width: 100%;
+  height: 250px;
+  display: flex; /* Use flex to position eyes */
+  align-items: center; /* Vertically centers items */
+  padding-top: 20px; /* Push eyes down slightly */
+}
+.sprite {
+ width:100%;
+ height:100%;
+ display:block;
+}
+
+/* Eye Sockets */
+.eye-socket {
+  height:50px;
+  width:50px;
+  top:39px;
+  left:90px;
+  background-color: #ffff00; /* White of the eye */
+  position: absolute; /* Crucial for positioning pupils inside */
+  overflow: hidden; /* Keep pupils within bounds */
+  clip-path: ellipse(35% 45% at 62% 46%);
+  rotate: 30 deg;
+}
+
+/* Pupils */
+.pupil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers pupil within socket initially */
+  width: 15px;
+  height: 15px;
+  background-color: #18181b; /* Black pupil */
+  border-radius: 50%;
+  transition: transform 0.1s linear; /* Smooth pupil movement */
+}
+
+/* Mouth */
+.mouth {
+  position: absolute;
+  bottom: 20px;
+  width: 80px;
+  height: 15px;
+  background-color: #18181b;
+  border-radius: 10px 10px 10px 10px; /* Rounded bottom corners */
+}
