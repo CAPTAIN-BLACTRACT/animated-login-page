@@ -1,16 +1,87 @@
-# React + Vite
+Animated Login Page with Eye-Tracking
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and fun login page built with React + Vite, featuring an interactive animation where the "eyes" on the form follow your mouse cursor.
 
-Currently, two official plugins are available:
+🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Interactive Animation: The eyes on the login form track mouse movement, creating a playful and engaging user experience.
 
-## React Compiler
+Modern Frontend: Built with a fast, modern stack using React and Vite.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clean UI: A simple, focused, and easy-to-style login form.
 
-## Expanding the ESLint configuration
+Easy to Run: Get the project up and running locally in just a few commands.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+
+React: A JavaScript library for building user interfaces.
+
+Vite: A next-generation frontend tooling for fast development.
+
+CSS: Used for all custom styling and animations.
+
+📦 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+Prerequisites
+
+You will need Node.js (which includes npm) installed on your machine.
+
+Installation & Running
+
+Clone the repository:
+
+git clone [https://github.com/CAPTAIN-BLACTRACT/animated-login-page.git](https://github.com/CAPTAIN-BLACTRACT/animated-login-page.git)
+
+
+Navigate to the project directory:
+
+cd animated-login-page
+
+
+Install NPM packages:
+
+npm install
+
+
+Run the development server:
+
+npm run dev
+
+
+Open your browser and navigate to the local URL provided in the terminal (usually http://localhost:5173).
+
+📁 Project Structure
+
+/
+├── public/           # Static assets
+├── src/              # Main source code
+│   ├── components/     # (Recommended) Your React components (e.g., LoginForm.jsx)
+│   ├── App.jsx         # Main App component
+│   ├── index.css       # Global styles
+│   └── main.jsx        # Entry point of the application
+├── .eslintrc.cjs     # ESLint configuration
+├── index.html        # Main HTML template
+├── package.json      # Project dependencies and scripts
+├── vite.config.js    # Vite configuration
+└── README.md         # You are here!
+
+
+🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📄 License
+
+Distributed under the MIT License. See LICENSE for more information. (You may need to add a LICENSE file to your repository).
