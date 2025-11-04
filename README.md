@@ -84,4 +84,4 @@ Open a Pull Request
 
 📄 License
 
-Distributed under the MIT License. See LICENSE for more information. (You may need to add a LICENSE file to your repository).
+Distributed under the MIT License. See LICENSE for more information.
